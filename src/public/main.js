@@ -1,3 +1,9 @@
+// nessesary for chrome
+const SpeechRecognition =
+  window.SpeechRecognition ?? window.webkitSpeechRecognition
+const SpeechGrammarList =
+  window.SpeechGrammarList ?? window.webkitSpeechGrammarList
+
 // create a new instanse of our speech recognition interface
 const recognition = new SpeechRecognition()
 
